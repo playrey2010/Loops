@@ -55,9 +55,32 @@ public class Loops {
         for (int i = 0; i < 4; i++) {
             System.out.println("**********");
         }
+        System.out.println("");
         String message = "*";
-        3
+        System.out.println(message);
+        for (int i = 0; i < 4; i++) {
+            message += "*";
+            System.out.println(message);
+        }
+        System.out.println("");
+        String message1 = "    *";
+        System.out.println(message1);
+        for (int i = 0; i < 4; i++) {
+            message1 = message1.replaceFirst(" ", "");
+            message1 += "*";
+            System.out.println(message1);
+        }
 
+        int num1 = 0;
+        long factorial = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Give me a number and I'll return its factorial: ");
+        num1 = sc.nextInt();
+
+        for (int i = 1; i <= num1; i++) {
+            factorial *= i;
+        }
+        System.out.println(factorial);
     }
 
 }
